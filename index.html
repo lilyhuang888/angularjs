@@ -1,22 +1,17 @@
 <!doctype html>
-<html ng-app>
+<html ng-app="myApp">
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
 <meta charset="UTF-8">
-<title>Two-Way Data Binding</title>
+<title>Dependncy Injection</title>
+
+<script src="practice.js"></script>
+
 </head>
 
 <body>
 
-	<div>
-		
-		5x{{price}} = {{5*price}}
-		
-		<BR>
-		
-		<input type="number" ng-model="price" ng-init="price=100">
-		
-	</div>
+	<div ng-controller="MainController"></div>
 
 
 </body>
